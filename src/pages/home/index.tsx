@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import { Social } from "../../components/Social";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -111,6 +112,12 @@ export function Home() {
           </footer>
         )}
       </main>
+      <Link
+        to="/login"
+        className="bg-gray-600/20 hover:bg-blue-400/20 text-white font-bold float-right w-4/12 flex justify-center items-center py-2 rounded-md mt-48"
+      >
+        Ver como admin
+      </Link>
     </div>
   );
 }
