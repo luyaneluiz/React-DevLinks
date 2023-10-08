@@ -11,15 +11,15 @@ export function Header() {
 
   return (
     <header className="w-full">
-      <nav className="w-full bg-white h-12 flex items-center justify-between px-3">
-        <div className="flex gap-4 font-medium">
+      <nav className="w-full bg-blue-200/10 py-4 flex items-center justify-between px-3">
+        <div className="flex gap-4 font-medium text-slate-300">
           <Link to="/">Home</Link>
           <Link to="/admin">Links</Link>
           <Link to="/admin/social">Redes sociais</Link>
         </div>
 
         <button onClick={handleLogout}>
-          <BiLogOut size={28} color="#600607" />
+          <BiLogOut size={28} color="#fff" />
         </button>
       </nav>
     </header>
